@@ -12,7 +12,7 @@ VERSION ?= $(shell git rev-parse HEAD)
 APP     ?= k8exam-platform-ui
 IMAGE   ?= gcr.io/matthewdavis-devops/$(APP):$(VERSION)
 
-.PHONY: build
+.PHONY: build install
 
 all: build push
 deploy:	kubeme build push install
