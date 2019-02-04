@@ -1,0 +1,76 @@
+<div class="wrapper">
+
+    <mat-toolbar color="primary" class="mat-elevation-z6">
+
+        <div class="left">
+
+            <button mat-icon-button
+                    (click)="sidenavService.toggle()"
+                    style="margin-right: 15px; color: #c0c0c0">
+
+                <mat-icon>menu</mat-icon>
+
+            </button>
+
+            <a [routerLink]="['/']">
+
+                <img src="../../assets/logo-inline-green-dark.png" style="height: 60px; width: 65px;">
+
+            </a>
+
+            <div class="text">
+
+                <a [routerLink]="['/']">
+
+                    <teximate [text]="'kubernetes questions & answers'" [enter]="enterAnimation"></teximate>
+
+                </a>
+
+            </div>
+
+        </div>
+
+        <div class="right">
+
+            <!--            <button mat-raised-button-->
+            <!--                    color="warn"-->
+            <!--                    [routerLink]="['/validator']"-->
+            <!--                    style="background: rebeccapurple">-->
+
+            <!--                <mat-icon>spellcheck</mat-icon>-->
+
+            <!--                Validator-->
+
+            <!--            </button>-->
+
+            <button mat-raised-button
+                    color="accent"
+                    disabled
+                    (click)="postService.open()">
+
+                <mat-icon>add_comment</mat-icon>
+
+                Create Post
+
+            </button>
+
+            <button mat-raised-button>
+
+                Login
+
+            </button>
+
+            <!--            <button *ngIf="loginService.isLoggedIn()"-->
+            <!--                    mat-raised-button-->
+            <!--                    (click)="loginService.logout()">-->
+
+            <!--                Logout-->
+
+            <!--            </button>-->
+
+        </div>
+
+    </mat-toolbar>
+
+</div>
+

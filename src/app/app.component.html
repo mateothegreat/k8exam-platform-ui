@@ -1,0 +1,26 @@
+<app-header></app-header>
+
+<mat-sidenav-container class="example-container">
+
+  <mat-sidenav mode="over" [opened]="sidenavService.sidenavOpened">
+
+    <app-sidenav></app-sidenav>
+
+  </mat-sidenav>
+
+  <mat-sidenav-content>
+
+    <div class="content">
+
+      <router-outlet></router-outlet>
+
+    </div>
+
+  </mat-sidenav-content>
+
+</mat-sidenav-container>
+
+<app-footer></app-footer>
+
+<ng-progress [color]="'yellow'"
+             [thick]="true"></ng-progress>

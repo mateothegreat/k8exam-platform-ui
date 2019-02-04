@@ -1,0 +1,163 @@
+@import '~@angular/material/prebuilt-themes/purple-green.css';
+@import "~ngx-toastr/toastr.css";
+
+body {
+  
+  margin: 0;
+  padding: 0;
+  
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+  color: #e1e1e1;
+  
+  background: linear-gradient(90deg, #29262a 0%, #131313 100%);
+  
+}
+
+form {
+  
+  height: 100%;
+}
+
+h1 {
+  
+  font-size: 16px;
+  
+}
+
+.mat-dialog-container {
+  
+  padding: 0 !important;
+  
+}
+
+.mat-dialog-title {
+  
+  background: #333;
+  padding: 10px;
+  
+}
+
+.mat-dialog-content {
+  
+  margin: 0 !important;
+  
+}
+
+.mat-dialog-actions {
+  
+  padding: 0 !important;
+  background: #333;
+  margin-top: 20px;
+  
+}
+
+mat-tab-group {
+  
+  mat-tab {
+    
+    .mat-icon {
+      
+      font-size: 14px;
+      height: 14px;
+      width: 14px;
+      
+    }
+    
+  }
+  
+  mat-ink-bar {
+    
+    width: unset !important;
+    
+  }
+  
+  .mat-tab-label {
+    
+    margin-right: 10px;
+    padding: 5px;
+    //padding-left: 20px;
+    width: 100px !important;
+  }
+  
+}
+
+//mat-tab-group, .mat-tab-body, .mat-tab-body-content, .mat-tab-body-wrapper {
+//
+//    height: 100%;
+//
+//}
+
+//.mat-toolbar.mat-primary {
+//
+//    background: linear-gradient(0deg, #223994 0%, #3a47d5 100%);
+//
+//}
+
+a {
+  
+  color: mediumpurple;
+  text-decoration: none;
+  
+  &:hover {
+    
+    color: dodgerblue;
+    
+  }
+  
+}
+
+mat-toolbar {
+  
+  background: #0d0d0f !important;
+  
+}
+
+ngx-monaco-editor, .monaco-editor, .editor, .editor-container {
+  
+  height: 100% !important;
+  width: 100%;
+  display: block;
+  
+}
+
+prism {
+  
+  pre {
+    
+    border-radius: 2px !important;
+    border: 0 !important;
+    margin: 0 !important;
+    
+  }
+  
+}
+
+.tags {
+  
+  display: flex;
+  justify-content: flex-end;
+  padding: 5px;
+  
+  .mat-standard-chip {
+    
+    cursor: pointer;
+    padding: 5px;
+    border-radius: 4px;
+    min-height: 20px;
+    font-size: 12px;
+    
+    &:hover {
+      
+      background: rebeccapurple;
+      
+    }
+    
+  }
+  
+}
+
+.shadow-inner {
+  
+  box-shadow: 1px 1px 0.5em black inset;
+  
+}
