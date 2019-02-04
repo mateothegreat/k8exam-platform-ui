@@ -12,6 +12,7 @@ import { AppComponent }     from './app.component';
 import { FooterComponent }  from './footer/footer.component';
 import { HeaderComponent }  from './header/header.component';
 import { HomeComponent }    from './home/home.component';
+import { LoginModule }      from './login/login.module';
 import { SharedModule }     from './shared/shared.module';
 import { SidenavComponent } from './sidenav/sidenav.component';
 
@@ -32,6 +33,7 @@ import { SidenavComponent } from './sidenav/sidenav.component';
 
         BrowserModule,
         BrowserAnimationsModule,
+        LoginModule,
         NgProgressModule,
         NgProgressHttpModule,
         SharedModule,

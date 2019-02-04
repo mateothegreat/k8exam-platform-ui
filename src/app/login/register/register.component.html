@@ -1,0 +1,53 @@
+<div class="wrapper">
+
+    <form [formGroup]="formGroup">
+
+        <h1 mat-dialog-title>Register</h1>
+
+        <mat-dialog-content>
+
+            <mat-form-field>
+
+                <input matInput
+                       formControlName="email"
+                       placeholder="Email Address">
+
+            </mat-form-field>
+
+            <mat-form-field>
+
+                <input matInput
+                       formControlName="password"
+                       type="password"
+                       placeholder="Password">
+
+                <input matInput
+                       formControlName="password"
+                       type="password"
+                       placeholder="Verify Password">
+
+            </mat-form-field>
+
+            <a [routerLink]="['/login']">Already have an account?</a>
+
+        </mat-dialog-content>
+
+        <mat-dialog-actions align="end">
+
+            <button mat-button mat-dialog-close>Cancel</button>
+
+            <button mat-button
+                    [disabled]="!formGroup.valid"
+                    (click)="register()">
+
+                Register
+
+            </button>
+
+        </mat-dialog-actions>
+
+    </form>
+
+</div>
+
+
