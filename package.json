@@ -21,6 +21,7 @@
         "@angular/platform-browser": "~7.2.0",
         "@angular/platform-browser-dynamic": "~7.2.0",
         "@angular/router": "~7.2.0",
+        "@auth0/angular-jwt": "^2.1.0",
         "@ngx-progressbar/core": "^5.3.1",
         "@ngx-progressbar/http": "^5.3.1",
         "core-js": "^2.5.4",
@@ -28,7 +29,7 @@
         "ngx-teximate": "^0.3.0",
         "ngx-toastr": "^9.1.1",
         "rxjs": "~6.3.3",
-        "rxjs-compat": "^6.4.0",
+        "rxjs-compat": "6.3.3",
         "terser": "3.14.1",
         "tslib": "^1.9.0",
         "zone.js": "~0.8.26"

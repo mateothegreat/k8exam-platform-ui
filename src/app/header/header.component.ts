@@ -1,6 +1,7 @@
-import { Component }     from '@angular/core';
-import { bounceInRight } from 'ng-animate';
-import { TextAnimation } from 'ngx-teximate';
+import { Component }      from '@angular/core';
+import { bounceInRight }  from 'ng-animate';
+import { TextAnimation }  from 'ngx-teximate';
+import { SidenavService } from '../sidenav/sidenav.service';
 
 @Component({
     selector: 'app-header',
@@ -17,7 +18,7 @@ export class HeaderComponent {
 
     };
 
-    public constructor() {
+    public constructor(public sidenavService: SidenavService) {
 
     }
 
