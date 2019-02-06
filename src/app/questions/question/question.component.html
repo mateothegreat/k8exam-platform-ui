@@ -1,0 +1,50 @@
+<div class="wrapper">
+
+    <div class="left">
+
+        <div class="count">
+
+            <span class="correct">99</span> / <span class="wrong">8</span>
+
+        </div>
+
+    </div>
+
+    <div class="content">
+
+        <div class="category">
+
+            <span>Categories:</span>
+
+            <a *ngFor="let category of question.categories" [routerLink]="[ category.name.toLowerCase() ]">{{ category.name }} </a>
+
+        </div>
+
+        <div class="question"
+             (click)="answersVisible = !answersVisible">{{ question.name }}</div>
+
+        <div *ngIf="answersVisible"
+             class="answers">
+
+            <div class="title">Select an answer:</div>
+
+            <div *ngFor="let answer of question.answers" class="answer">
+
+                {{ answer.value }}
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <div class="right">
+
+        <div class="fal fa-caret-up"></div>
+        <div class="fal fa-caret-down"></div>
+
+    </div>
+
+</div>
+

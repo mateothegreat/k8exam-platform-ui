@@ -1,3 +1,4 @@
+import { HttpClientModule }        from '@angular/common/http';
 import { NgModule }                from '@angular/core';
 import { BrowserModule }           from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -13,6 +14,7 @@ import { FooterComponent }  from './footer/footer.component';
 import { HeaderComponent }  from './header/header.component';
 import { HomeComponent }    from './home/home.component';
 import { LoginModule }      from './login/login.module';
+import { QuestionsModule }  from './questions/questions.module';
 import { SharedModule }     from './shared/shared.module';
 import { SidenavComponent } from './sidenav/sidenav.component';
 
@@ -33,11 +35,13 @@ import { SidenavComponent } from './sidenav/sidenav.component';
 
         BrowserModule,
         BrowserAnimationsModule,
+        HttpClientModule,
         LoginModule,
         NgProgressModule,
         NgProgressHttpModule,
         SharedModule,
         TeximateModule,
+        QuestionsModule,
 
         RouterModule.forRoot([
 

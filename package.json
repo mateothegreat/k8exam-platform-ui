@@ -24,6 +24,8 @@
         "@auth0/angular-jwt": "^2.1.0",
         "@ngx-progressbar/core": "^5.3.1",
         "@ngx-progressbar/http": "^5.3.1",
+        "@ngxux/datatable": "0.0.7",
+        "@swimlane/ngx-datatable": "^14.0.0",
         "core-js": "^2.5.4",
         "ng-animate": "^0.3.4",
         "ngx-teximate": "^0.3.0",
